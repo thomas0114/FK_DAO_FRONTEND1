@@ -1,0 +1,92 @@
+@import './_variables.scss';
+
+.text-gradient {
+	background: linear-gradient(150deg,  #E4CB6F 20%,#DB5994 50% ,#7735BD 60%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.text-gradient-big {
+	background: linear-gradient(-27deg, #06A9C0 67%, #DB5994 84%, #E4CB6F 91%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.text-gradient-big1 {
+	background: linear-gradient(150deg,  #E4CB6F 20%,#DB5994 50% ,#7735BD 60%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.text-gradient-big2 {
+	background: linear-gradient(150deg,  #E4CB6F 50%,#DB5994 80% ,#7735BD 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.text-content-gray {
+	margin-top:3%;
+	// color: $c-gray;
+	color: white;
+	font-size: 16px;
+	// font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 28px;
+}
+
+.text-white {
+	color: $c-darkwhite;
+}
+
+.button-blue-border {
+	background-color: transparent;
+	border: 1px solid $c-blue;
+	color: $c-white;
+	padding: 10px;
+	cursor: pointer;
+	&:hover {
+		border-image: linear-gradient(#E4CB6F, #DB5994, #06A9C0) 1 1 1;
+		background-color: #111;
+	}
+
+	&:active {
+		border-image: linear-gradient(#DB5994, #E4CB6F, #06A9C0) 1 1 1;
+		background-color: #000;
+	}
+}
+
+.white-simple-button {
+	background-color: white;
+	border: none;
+	padding: 10px 40px;
+	margin: 0px;
+	border-radius: 5px;
+	color: #2DAFB2;
+	cursor: pointer;
+	width: 100%;
+
+	&:hover {
+		background-color: #EEE;
+	}
+	
+	&:active {
+		background-color: #DDD;
+	}
+
+	&:disabled {
+		opacity: 0.5;
+	}
+}
+
+.fixed {
+	position: fixed;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.width-100 {
+	width: 100%;
+}

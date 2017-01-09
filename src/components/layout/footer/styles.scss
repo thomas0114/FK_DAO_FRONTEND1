@@ -1,0 +1,17 @@
+@import "../../variables";
+
+.footer-wrapper {
+	width: 100%;
+	display: flex;
+	padding: 15px 10px;
+	background-color: $c-black;
+
+	.footer-item {
+		color: $c-blue;
+		font-size: 16px;
+		padding: 0 10px;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}

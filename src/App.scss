@@ -1,0 +1,189 @@
+.slider-control-bottomcenter {
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    ul {
+        position: relative;
+        top: -10px;
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+        list-style-type: none;
+
+        li {
+            button {
+                cursor: pointer;
+                background: transparent;
+                border: none;
+                fill: #7938D2 !important;
+				opacity: 0.3 !important;
+				svg{
+					width: 16px;
+					height: 16px;
+					circle{
+						cx:8px;
+						cy:8px;
+						r:8px;
+					}
+				}
+            }
+        }
+    }
+
+    .active {
+        button {
+            fill: #7938D2 !important;
+			opacity: 1 !important;
+        }
+    }
+	
+}
+
+#main-container {
+	margin-top: 72px;
+	display: flex;
+	
+	#side-image {
+		display: flex;
+		position: fixed;
+		background: black;
+		background-image: linear-gradient(to bottom, rgba(29, 8, 62, 0.9), rgba(21,10,36, 0.86)), url("./assets/slide_up.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		// flex-direction: column;
+		// justify-content: center;
+		// background-image: url("./assets/heroimage.png");
+		background-position: center top;
+		background-size: 100% auto;
+		
+		.tip-button {
+			position: absolute;
+			z-index: 1;
+			background-color: transparent;
+			border: none;
+			cursor: pointer;
+			width: 20%;
+			img {
+				width: 100%;
+			}
+		}
+
+
+
+		#tip-button-shorts {
+			top: 60%;
+			left: 25%;
+		}
+
+		#tip-button-boots {
+			top: 80%;
+			left: 60%;
+		}
+	}
+
+	#mobile-back {
+		display: none;
+	}
+
+	.hero-image {
+		height: calc(100vh - 72px);
+		display: hide;
+	}
+
+	.tip-card {
+		display: none;
+		background-color: black;
+		border: 1px solid #06A9C0;	
+		position: fixed;
+		top: 30%;
+		left: 50%;
+		transform: translateX(-50%);
+		padding: 20px;
+		width: 40%;
+		z-index: 10;
+
+		.tip-title {
+			background: linear-gradient(-46deg, #06A9C0 88%, #DB5994 93%, #E4CB6F 96%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			font-size: 24px;
+			font-weight: 500;
+			font-variant-caps: all-petite-caps;
+			letter-spacing: 5px;
+		}
+
+		.tip-category {
+			display: flex;
+
+			.tip-category-title {
+				color: gray;
+				font-size: 16px;
+				font-weight: 200;
+				line-height: 178.71%;
+			}
+
+			.tip-category-text {
+				color: white;
+				font-variant-caps: all-petite-caps;
+				font-size: 16px;
+				font-weight: 200;
+				line-height: 178.71%;
+			}
+		}
+
+		.tip-content {
+			color: white;
+			font-size: 16px;
+			line-height: 29px;
+		}
+
+		.tip-close-button {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			background-color: transparent;
+			border: none;
+			cursor: pointer;
+		}
+	}
+
+	.social-wrapper {
+		position: fixed;
+    bottom: 20px;
+    text-align: center;
+		display: flex;
+
+		.img-wrapper {
+			width: 25%;
+			img {
+				width: 50%;
+			}
+		}
+	}
+
+	.body-container {
+		display: block;
+		overflow: hidden;
+	}
+		
+	#page-toggle-button {
+		display: none;
+		cursor: pointer;
+	}
+
+	#nav-modal-toggle-button {
+		display: none;
+		cursor: pointer;
+	}
+
+	#nav-modal {
+		display: none;
+		z-index: 1;
+	}
+}

@@ -1,0 +1,208 @@
+@import "../../variables";
+
+.header-wrapper {
+	background-image: url("../../../assets/top_header1.png");
+	backdrop-filter: blur(10px);
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 72px;
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	// background-color: $c-black;
+	#header-title {
+		text-align: center;
+		padding: 12px 22px;
+		.header-text {
+			flex:1;
+			display: inline-block;
+			font-weight: 500;
+			font-size: 31px;
+			line-height: 38px;
+			letter-spacing: 0.245em;
+			color: #EBE8E8;
+		}
+	}
+	.connect-button-wrapper {
+		display: flex;
+		flex:1;
+		justify-content: flex-end;
+		padding: 0 20px;
+
+	}
+	.wallet-result-modal {
+		display: flex;
+		flex-direction: column;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		width: 50%;
+		transform: translate(-50%, -50%);
+		background-color: #2DAFB2;
+		z-index: 2;
+		// box-shadow: 0 0 15px gray;
+
+		// h1 {
+		// 	text-align: center;
+		// 	color: white;
+		// }
+
+		// .balance-card {
+		// 	border: 1px solid white;
+		// 	color: white;
+		// 	padding: 10px 10px 20px 10px;
+		// 	margin: 5px 0;
+		// 	position: relative;
+		// 	border-radius: 5px;
+		// 	background-color: rgba($color: white, $alpha: 0.2);
+			
+		// 	.balance-card-row {
+		// 		display: flex;
+		// 		justify-content: space-between;
+		// 		align-items: center;
+		// 		padding: 10px 20px;
+
+		// 		.balance-title {
+		// 			display: flex;
+		// 			align-items: center;
+
+		// 			span {
+		// 				font-size: 16px;
+		// 				font-weight: 700;
+		// 				padding: 0 10px;
+		// 			}
+		// 		}
+
+		// 		.balance-value {
+		// 			color: white;
+		// 			font-weight: 700;
+		// 			opacity: 0.5;
+		// 		}
+
+		// 		.balance-max {					
+		// 			color: white;
+		// 			font-weight: 400;
+		// 			opacity: 0.5;
+		// 		}
+		// 	}
+
+		// 	.icon-exchange {
+		// 		background-color: white;
+		// 		border-radius: 50%;
+		// 		padding: 5px 10px;
+		// 		position: absolute;
+		// 		bottom: -17px;
+		// 		left: calc(50% - 17.5px);
+		// 		z-index: 1;
+		// 	}
+		// }
+
+		// .button-wrapper {
+		// 	text-align: center;
+		// }
+		
+		// .button-close {
+		// 	background-color: transparent;
+		// 	border: none;
+		// 	cursor: pointer;
+		// 	position: absolute;
+		// 	top: 0;
+		// 	right: 0;
+		// }
+
+		// .price-list {
+		// 	display: flex;
+		// 	justify-content: space-between;
+		// 	color: white;
+		// 	margin: 10px 0;
+		// }
+	}
+}
+
+@media (max-width: 925px) {
+	.header-wrapper {
+		#header-title {
+			.header-text {
+				font-size: 25px;
+				letter-spacing: 0.15em;
+				margin: 0 10px;
+			}
+		}
+
+		.connect-button-wrapper {
+			.button-blue-border {
+				font-size: 10px;
+			}
+			padding: 0 10px;
+		}
+	}
+}
+
+
+@media (max-width: 725px) {
+	.header-wrapper {
+		#header-title {
+			.header-text {
+				font-size: 20px;
+				letter-spacing: 0.05em;
+				margin: 0 5px;
+			}
+		}
+
+		.connect-button-wrapper {
+			.button-blue-border {
+				font-size: 7px;
+			}
+			padding: 0 10px;
+		}
+	}
+}
+// Mobile Design //
+@media (max-width: 625px) {
+	.header-wrapper {
+		justify-content: center;
+		#header-title {
+			align-self: flex-end;
+			.header-text {
+				font-size: 16px;
+				line-height: 20px;
+				letter-spacing: 0.215em;
+			}
+		}
+
+		// .connect-button-wrapper {
+		// 	display: none;
+
+		// 	.button-blue-border {
+		// 		font-size: 10px;
+		// 	}
+		// 	padding: 0 10px;
+		// }
+	}
+}
+
+@media (max-width: 425px) {
+	.header-wrapper {
+		justify-content: center;
+		#header-title {
+			align-self: flex-end;
+			.header-text {
+				font-size: 12px;
+				line-height: 20px;
+				letter-spacing: 0.215em;
+			}
+		}
+
+		// .connect-button-wrapper {
+		// 	display: none;
+
+		// 	.button-blue-border {
+		// 		font-size: 10px;
+		// 	}
+		// 	padding: 0 10px;
+		// }
+	}
+}

@@ -1,0 +1,58 @@
+@import "../../variables";
+
+.navbar-wrapper {
+	position: fixed;
+	top: 72px;
+	z-index: 1;
+	width: 100%;
+	padding: 10px 0;
+	background-color: $c-black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 54px;
+
+	.navbar-item-list {
+		display: flex;
+		margin-left: 20px;
+		.navbar-item {
+			color: $c-blue;
+			font-size: 16px;
+			padding: 0 15px;
+			&:hover {
+				cursor: pointer;
+				color: white;
+			}
+		}
+	}
+	
+	.text-showcase {
+		font-weight: 700;
+		padding: 0 20px;
+		margin-right: 20px;
+	}
+}
+
+@media (max-width: 925px) {
+	.navbar-wrapper {
+		padding: 10px 0;
+
+		.navbar-item-list {
+			.navbar-item {
+				font-size: 12px;
+				padding: 0 10px;
+			}
+		}
+		
+		.text-showcase {
+			font-size: 14px;
+			padding: 0 20px;
+		}
+	}
+}
+// Mobile Design //
+@media (max-width: 625px) {
+	.navbar-wrapper {
+		display: none;
+	}
+}

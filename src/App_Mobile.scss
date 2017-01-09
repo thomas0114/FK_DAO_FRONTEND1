@@ -1,0 +1,83 @@
+@media (max-width: 625px) {
+	#main-container {
+		margin-top: 72px;
+		display: flex;
+		
+		#side-image {
+			display: none;
+		}
+
+		#mobile-back {
+			display: flex;
+			position: relative;
+			width: 100%;
+			background-color: black;
+			// background-image: url("./assets/heroimage.png");
+
+
+			.tip-button {
+				position: absolute;
+				z-index: 1;
+				background-color: transparent;
+				border: none;
+				cursor: pointer;
+				width: 20%;
+
+				img {
+					width: 100%;
+				}
+			}
+
+			#tip-button-shirt {
+				top: 25%;
+				left: 50%;
+			}
+
+			#tip-button-shorts {
+				top: 60%;
+				left: 25%;
+			}
+
+			#tip-button-boots {
+				top: 80%;
+				left: 60%;
+			}
+		}
+		
+		.tip-card {
+			width: 80%;
+			z-index: 1;
+		}
+
+		#page-toggle-button {
+			padding: 5px;
+			cursor: pointer;
+			display: block;
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+			background-color: black;
+			text-align: center;
+			border: none;
+			z-index: 1;
+		}
+		
+		.body-container {
+			display: none;
+			position: absolute;
+			top: 45%;
+			z-index: 1;
+		}
+
+		#nav-modal-toggle-button {
+			display: block;
+			position: fixed;
+			width: 35px;
+			height: 35px;
+			top: 90px;
+			right: 18px;
+			background-color: #06A9C0;
+			border: none;
+		}
+	}
+}
